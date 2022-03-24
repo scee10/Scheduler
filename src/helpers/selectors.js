@@ -1,24 +1,24 @@
 export function getAppointmentsForDay(state, day) {
 
-  let appointmentArr = [];
-  let correctAppointmentsForDay = [];
+  if (state.days.length === 0) {
+    return [];
+  };
 
-  // accessing days inside state Array
-  const stateArrDays = Object.values(state)[0]
-  // accessing appointments inside state Array
-  const stateArrAppointments = Object.values(state)[1]
+  const correctDay = state.days.find(dayObj => {
+    return dayObj.name === day;
+  });
+
+  if (correctDay === undefined) {
+    return [];
+  };
+
+  const appointmentsForDay = correctDay.appointments.map(id => {
+    return state.appointments[id];
+  });
+
+  return appointmentsForDay;
+}
+
+export function getInterview(state, interview) {
   
-  // pushing the correct ids for specific day into new array
-  stateArrDays.map(dayObj => {
-    if (dayObj.name === day) {
-      dayObj.appointments.forEach(id => appointmentArr.push(id))
-    }
-  })
-
-  //push each object[correct id] into new array 
-  appointmentArr.forEach(id => {
-    correctAppointmentsForDay.push(stateArrAppointments[id])
-  })
-
-  return correctAppointmentsForDay
 }
