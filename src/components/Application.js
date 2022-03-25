@@ -8,6 +8,7 @@ import DayList from "./DayList";
 import "components/Appointment";
 import Appointment from "./Appointment";
 import { getAppointmentsForDay, getInterview } from "helpers/selectors";
+import useVisualMode from "hooks/useVisualMode";
 
 
 export default function Application(props) {
@@ -67,6 +68,8 @@ export default function Application(props) {
       <section className="schedule">
         {appointmentsArr}
         <Appointment time="5pm"/>
+        {/* const { mode, transition, back } = useVisualMode(
+        props.interview ? SHOW : EMPTY); */}
       </section>
     </main>
   );
