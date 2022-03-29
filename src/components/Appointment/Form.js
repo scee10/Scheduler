@@ -37,7 +37,7 @@ export default function Form (props) {
           />
         </form>
         <InterviewList 
-          interviewers={interviewers}
+          interviewers={interviewers.toSring()}
           value={interviewerID}
           onChange={(event) => setInterviewer(event)}
         />
