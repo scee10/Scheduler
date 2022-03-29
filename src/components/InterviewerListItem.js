@@ -1,8 +1,8 @@
 import React from "react";
-import "components/InterviewListItem.scss";
+import "components/InterviewerListItem.scss";
 import classNames from "classnames";
 
-export default function InterviewListItem(props) {
+export default function InterviewerListItem(props) {
   const { name, avatar, setInterviewer, selected} = props;
   const nameClass = classNames("interviewers__item",{
     "interviewers__item--selected": selected,

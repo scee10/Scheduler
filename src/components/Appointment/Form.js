@@ -1,5 +1,5 @@
 import React from "react";
-import InterviewList from "components/InterviewList";
+import InterviewerList from "components/InterviewerList";
 import Button from "components/Button";
 import { useState } from 'react';
 
@@ -36,8 +36,8 @@ export default function Form (props) {
             placeholder="Enter Student Name"
           />
         </form>
-        <InterviewList 
-          interviewers={interviewers.toSring()}
+        <InterviewerList 
+          interviewers={interviewers.toString()}
           value={interviewerID}
           onChange={(event) => setInterviewer(event)}
         />
