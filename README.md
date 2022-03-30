@@ -2,11 +2,11 @@
 Scheduler is a single-page web application built with react. It allows users to book an interview, edit their interview, and delete their interview. 
 
 # Project Stack
-** Front-End: ** React, Axios, JSX, HTML, SASS, JavaScript
+**Front-End:** React, Axios, JSX, HTML, SASS, JavaScript
 
-** Back-End: ** Express, Node.js, PostgreSQL
+**Back-End:** Express, Node.js, PostgreSQL
 
-** Testing: ** Storybook, Webpack Dev Server, Jest, Testing Library and Cypress
+**Testing:** Storybook, Webpack Dev Server, Jest, Testing Library and Cypress
 
 ## Final Product Screenshots
 
