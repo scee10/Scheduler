@@ -21,9 +21,9 @@ Testing: Storybook, Webpack Dev Server, Jest, Testing Library and Cypress
 
 ## Dependencies
 
-*Axios
-*@testing-library/react-hooks
-*react-test-renderer
+* Axios
+* @testing-library/react-hooks
+* react-test-renderer
 
 ## Setup
 
