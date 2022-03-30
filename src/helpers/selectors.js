@@ -1,14 +1,14 @@
 export function getAppointmentsForDay(state, day) {
   if (state.days.length === 0) {
     return [];
-  };
-  const correctDay = state.days.find(dayObj => {
+  }
+  const correctDay = state.days.find((dayObj) => {
     return dayObj.name === day;
   });
   if (correctDay === undefined) {
     return [];
-  };
-  const appointmentsForDay = correctDay.appointments.map(id => {
+  }
+  const appointmentsForDay = correctDay.appointments.map((id) => {
     return state.appointments[id];
   });
   return appointmentsForDay;
@@ -17,27 +17,26 @@ export function getAppointmentsForDay(state, day) {
 export function getInterview(state, interview) {
   if (!interview) {
     return null;
-  };
+  }
   let interviewerDetails = state.interviewers[interview.interviewer];
   return {
     student: interview.student,
-    interviewer: interviewerDetails
+    interviewer: interviewerDetails,
   };
 }
 
-export function getInterviewersForDay (state,day) {
+export function getInterviewersForDay(state, day) {
   if (state.days.length === 0) {
     return [];
-  };
-  const correctDay = state.days.find(dayObj => {
+  }
+  const correctDay = state.days.find((dayObj) => {
     return dayObj.name === day;
   });
   if (correctDay === undefined) {
     return [];
-  };
-  const interviewersForDay = correctDay.interviewers.map(id => {
+  }
+  const interviewersForDay = correctDay.interviewers.map((id) => {
     return state.interviewers[id];
   });
-
   return interviewersForDay;
 }

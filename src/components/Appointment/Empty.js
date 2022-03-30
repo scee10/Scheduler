@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Header (props) {
-  const {onAdd} = props;
+export default function Header(props) {
+  const { onAdd } = props;
 
   return (
     <main className="appointment__add">
@@ -12,5 +12,5 @@ export default function Header (props) {
         onClick={onAdd}
       />
     </main>
-  )
+  );
 }
