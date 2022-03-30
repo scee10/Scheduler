@@ -11,13 +11,13 @@ Scheduler is a single-page web application built with react. It allows users to 
 ## Final Product Screenshots
 
 ### Daily view
-!["Screenshot of daily view"]()
+!["Screenshot of daily view"](https://github.com/scee10/Scheduler/blob/master/docs/screenshot-dailyview.png?raw=true)
 
 ### New appointment booking
-!["Screenshot of new appointment booking"]()
+!["Screenshot of new appointment booking"](https://github.com/scee10/Scheduler/blob/master/docs/screenshot-newbooking.png?raw=true)
 
 ### Cancelling an interview
-!["Screenshot of cancelling an interview"]()
+!["Screenshot of cancelling an interview"](https://github.com/scee10/Scheduler/blob/master/docs/screenshot-cancelbooking.png?raw=true)
 
 ## Dependencies
 
