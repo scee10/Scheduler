@@ -35,6 +35,7 @@ export default function useApplicationData(props) {
       ...state.appointments,
       [id]: appointment,
     };
+    //helper function to update spots
     const days = updatingSpotsHelper(state, id, appointments);
     return axios.put(`/api/appointments/${id}`, { interview }).then((res) => {
       setState({ ...state, appointments, days });
@@ -50,6 +51,7 @@ export default function useApplicationData(props) {
       ...state.appointments,
       [id]: appointment,
     };
+    //helper function to update spots
     const days = updatingSpotsHelper(state, id, appointments);
     return axios.delete(`/api/appointments/${id}`, appointment).then(() => {
       setState({ ...state, appointments, days });
